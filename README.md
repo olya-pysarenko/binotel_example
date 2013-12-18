@@ -1,4 +1,4 @@
 binotel_example
 ===============
 
-Some .erb and .less files from binotel.com.
+My work for binotel.com.
