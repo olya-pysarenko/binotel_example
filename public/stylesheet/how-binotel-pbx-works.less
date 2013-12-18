@@ -1,0 +1,183 @@
+.cf() {
+    content: "\0020";
+    display: table;
+    height: 0;
+    overflow: hidden;
+}
+
+.clearfix() {
+    &:before { .cf(); }
+    &:after { .cf(); clear: both; }
+    zoom: 1;
+}
+
+#content-how-binotel-pbx-works {
+    padding: 23px 0 31px;
+    background: #f3f3f3 url("/images/1x4.png") repeat-x;
+    
+    div.content {
+        width: 1020px;
+        margin: 0 auto 30px;
+
+        div.text-label {
+            font: 300 17px/20px Open sans, Arial;
+            color: #8e8e92;
+            padding: 0 0 12px 85px;
+        }
+
+        div.graphic-container {
+            .clearfix;
+
+            div.sidebar-menu {
+                float: left;
+                width: 278px;
+
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+
+                    li {
+                        a {
+                            width: 249px;
+                            height: 108px;
+                            text-align: right;
+                            display: table-cell;
+                            vertical-align: middle;
+
+                            font: 300 22px/22px Open sans, Arial;
+                            color: #fff;
+
+                            padding: 0 25px 0 0;
+
+                            &.selected {
+                                background: url('/images/how-binotel-pbx-works-menu-arrow.png') no-repeat 237px 46px;
+                            }
+
+                            &.one-office {
+                                background-color: #de337a;
+                            }
+
+                            &.several-offices {
+                                background-color: #b0035f;
+                            }
+
+                            &.offices-in-different-cities {
+                                background-color: #9a055e;
+                            }
+
+                            &:hover {
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+
+            div.graphic-block {
+                float: left;
+                width: 742px;
+
+                h3.title {
+                    background-color: #e0e1e2;
+
+                    font: 400 30px/63px Open sans, Arial;
+                    color: #000;
+                    padding: 0 0 0 55px;
+                }
+
+                img.graphic {
+                    border: 0;
+                    margin: 20px 0 1px;
+                }
+            }
+        }
+
+        div.text-container {
+            .clearfix;
+            margin: 30px 0 45px;
+
+            div.left-column {
+                float: left;
+                width: 384px;
+                margin: 0 54px 0 0;
+
+                div.separator {
+                    height: 21px;
+                    background-color: #940e61;
+                }
+
+                h4 {
+                    text-align: center;
+                    font: 700 14px/40px Open sans, Arial;
+                    color: #000;
+                }
+
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+
+                    li {
+                        padding: 0 142px 0 0;
+                        text-align: right;
+
+                        font: 400 13px/54px Open sans, Arial;
+                        color: #000;
+
+                        &.office-phone-and-ip-gateway {
+                            background: url('/images/office-phone-and-ip-gateway.png') no-repeat 260px 6px;
+                        }
+
+                        &.ip-phone {
+                            background: url('/images/ip-phone.png') no-repeat 260px 6px;
+                        }
+
+                        &.softphone-and-headset {
+                            background: url('/images/softphone-and-headset.png') no-repeat 260px 6px;
+                        }
+
+                        span.gray {
+                            color: #818285;
+                        }
+                    }
+                }
+            }
+
+            div.right-column {
+                float: left;
+                width: 582px;
+                margin-bottom: 20px;
+
+                div.separator {
+                    height: 21px;
+                    background-color: #bc046b;
+                }
+
+                h2 {
+                    font: 400 22px/26px Open sans, Arial;
+                    color: #939598;
+                    margin: 10px 0 0 5px;
+                }
+
+                ul {
+                    list-style-type: none;
+                    margin: 0 0 0 5px;
+
+                    li {
+                        font: 400 15px/20px Open sans, Arial;
+                        color: #000;
+                    }
+                }
+
+                img.how-binotel-pbx-works-computer {
+                    margin: 25px 0 0px 5px;
+                }
+
+                h4 {
+                    font: 400 15px/26px Open sans, Arial;
+                    color: #939598;
+                    margin: 0 0 0 5px;
+                }
+            }
+        }
+    }
+}

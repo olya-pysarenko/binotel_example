@@ -1,0 +1,22 @@
+.cf() {
+    content: "\0020";
+    display: table;
+    height: 0;
+    overflow: hidden;
+}
+
+.clearfix() {
+    &:before { .cf(); }
+    &:after { .cf(); clear: both; }
+    zoom: 1;
+}
+
+#content-solutions-pro {
+    padding: 23px 0 31px;
+    background: #eeeeee url("/images/1x4.png") repeat-x;
+    
+    div.content {
+        width: 1020px;
+        margin: 0 auto 30px;
+    }
+}

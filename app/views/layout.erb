@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Binotel - <%= @title %></title>
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+
+    <link href='//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="/stylesheet-r.5/bootstrap-responsive.css" />
+    <link rel="stylesheet/less" type="text/css" href="/stylesheet/layout.less">
+    <link rel="stylesheet/less" type="text/css" href="/stylesheet/content-functions_description.less">
+    <link rel="stylesheet/less" type="text/css" href="/stylesheet/<%= @content_div %>.less">
+    <link rel="stylesheet/less" type="text/css" href="/stylesheet/style1.less" />
+    <link rel="stylesheet" href="/stylesheet-r.5/bootstrap.css" />
+
+    <script type="text/javascript" src="/javascript/jquery.min.js"></script>
+    <script type="text/javascript" src="/javascript/jquery.dropdown.js"></script>
+    <script src="/javascript/jquery.reveal.js"></script>
+    <script src="/javascript/less-1.3.0.min.js" type="text/javascript"></script>
+    <script src="/javascript/modernizr.custom.63321.js"></script>
+    <!-- <script src="/javascript/bootstrap.js"></script> -->
+    <script src="/javascript/bootstrap-tooltip.js"></script>
+    <script src="/javascript/bootstrap-popover.js"></script>
+    <script type="text/javascript" src="/javascript/main.js"></script>
+    <script type="text/javascript" src="/javascript/main-dev.js"></script>
+
+    <script type="text/javascript">
+        console.log(document.referrer);
+        console.log(window.location);
+    </script>
+    
+
+    <% if ENV['RACK_ENV'] == 'production' then %>
+
+    <script type="text/javascript">
+        window.production = true;
+    </script>
+
+    <!-- BEGIN JIVOSITE CODE {literal} -->
+    <script type="text/javascript">
+    (function() { var widget_id = '22926';
+    var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss); })(); 
+    </script>
+    <!-- {/literal} END JIVOSITE CODE -->
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-29778481-1']);
+      _gaq.push(['_setDomainName', 'binotel.ua']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter13995157 = new Ya.Metrika({id:13995157,
+                        webvisor:true,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true});
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <noscript><div><img src="//mc.yandex.ru/watch/13995157" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+    <% end %>
+</head>
+
+<body>   
+    <style type="text/css">
+        body {
+            font-size: 100%;
+            line-height: 1.125em;
+        }
+    </style>
+    <!--[if !IE]>-->
+    <style type="text/css">
+        body {
+            font-size: 16px;
+        }
+    </style><!--<[endif]-->
+    <div id="modal">
+        <div id="header">
+            <div class="head-part first"></div>
+            <dif class="head-part second"></dif>
+            <dif class="head-part third"></dif>
+            <dif class="head-part fourth"></dif>
+            <dif class="head-part fifth"></dif>
+        </div>
+        <div class="call-me-form">
+        <p>Оставьте Ваш номер телефона и в течение 10 минут мы Вам перезвоним</p>
+            <input type="text" name="Phone" placeholder="Ваш номер телефона"><br>
+            <input type="text" name="Name" placeholder="Как Вас зовут?"><br>
+            <input class="button yes" type="button" value="Перезвоните мне">
+            <input class="button cancel" type="button" value="Отмена">
+        </div>
+        <div class="send-success">
+            <p>Наш менеджер вам скоро перезвонит!</p>
+            <input class="button close-modal" type="button" value="Закрыть">
+        </div>
+    </div>
+
+    <div class="wrapper">
+        
+        <div id="header">
+            <div id="menuSlideContainer">
+                <div id="color-head"></div>
+                <div id="menuSlideContent">
+                    <ul class="scroll-menu">
+                        <li id="logo"></li>
+                        <li><a href="/" class="<%= 'selected' if @page == 'index'%>">Главная</a></li>
+                        <li><a href="/solutions-pro" class="<%= 'selected' if @page == 'solutions-pro'%>">Пакетные решения</a></li>
+                        <li><a href="/tariffs" class="<%= 'selected' if @page == 'tariffs'%>">Тарифы</a></li>
+                        <li><a href="/how-binotel-pbx-works/one-office" class="<%= 'selected' if @page == 'how-binotel-pbx-works/one-office' || @page == 'how-binotel-pbx-works/several-offices' || @page == 'how-binotel-pbx-works/offices-in-different-cities'%>">Как работает АТС Binotel</a></li>
+                        <li><a href="/phone-numbers" class="<%= 'selected' if @page == 'phone-numbers'%>">Номера</a></li>
+                        <li><a href="/about" class="<%= 'selected' if @page == 'about'%>">О компании</a></li>
+                        <li><a href="/contacts" class="<%= 'selected' if @page == 'contacts'%>">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="top-line">
+                <ul class="top-menu">
+                    <li>
+                        <!--<a href="/solutions-for-e-commerce" class="<%= 'selected' if @page == 'solutions-for-e-commerce' %>"><i class="e-commerce"></i>Решения для e-commerce</a>-->
+                    </li>
+                    <!--<li>
+                        <a href="/all-ukraine" class="<%= 'selected' if @page == 'all-ukraine'%>"><i class="all-ukraine"></i>Номера всех городов Украины</a>
+                    </li>-->
+                    
+                    <a class="login" href="https://my.binotel.ua/" target="_blank"><i></i>Вход для клиентов →</a>
+                </ul>
+            </div>
+            
+            <div class="content">
+                    
+                <div class="logo">
+                    <a href="/"><img src="/images/logo.png" alt="Binotel - Полный контроль всех телефонных звонков" /></a>
+                </div>
+                
+                <div id="separate"></div>
+
+                <div class="head-contacts">
+                    
+                    <script type="text/javascript">
+                        var numbers = new Array();
+
+                        function changeText(elementid) {        
+                            var ind = document.getElementById(elementid).selectedIndex;
+                            document.getElementById("displayed-phone").innerHTML=numbers[ind]; 
+                        }
+                    </script>
+
+                    <div class="main-phone">
+                        <p id="displayed-phone">044 303 99 13</p>
+                        <a href="javascript:void(0);" id="callme">Перезвоните мне</a>
+                    </div>
+
+                    <div class="fleft">
+                        <select id="cd-dropdown" name="cd-dropdown" class="cd-select">
+                            <option value="062 331 00 03" <%= 'selected' if session[:region] == 'Donetsk'%>>Донецк</option>
+                            <option value="056 797 60 20" <%= 'selected' if session[:region] == 'Dnepropetrovsk'%>>Днепропетровск</option>
+                            <option value="044 303 99 13" <%= 'selected' if session[:region] == 'Kiev'%>>Киев</option>
+                            <option value="048 735 70 13" <%= 'selected' if session[:region] == 'Odessa'%>>Одесса</option>
+                            <option value="057 761 30 13" <%= 'selected' if session[:region] == 'Kharkiv'%>>Харьков</option>
+                            <option value="032 253 24 28" <%= 'selected' if session[:region] == 'Lviv'%>>Львов</option>
+                        </select>
+                    </div>
+
+                    <div class="n0800">
+                        <p id="number">0 800 20 20 13</p>
+                        <p id="comment">Бесплатно со всех номеров по Украине</p>
+                    </div>
+
+                </div>
+
+                <ul class="menu">
+                    <li><a href="/" class="<%= 'selected' if @page == 'index'%>"><i class="home"></i></a></li>
+                   
+                    <li id="dropdown">
+                        <a href="javascript:void(0)" id="dropdown-href" class="<%= 'selected' if @page == 'solutions-lite' || @page == 'solutions-pro'|| @page == 'solutions-enterprise'%>">Пакетные решения</a>
+                        
+                        <ul id="business-solutions">
+                            <div class="define">
+                                <span>В вашей компании работают...</span>
+                            </div>
+                            
+                            <li class="tariff lite">
+                                <a class="kind" href="/solutions-lite">
+                                    <img src="/images/lite-mini.png" alt="lite">
+                                    <p class="staff lite"><span>2-8</span> сотрудников</p>
+
+                                </a>
+                            </li>
+                            
+                            <li class="tariff pro">
+                                <a class="kind" href="/solutions-pro">
+                                   <img src="/images/pro-mini.png" alt="pro">
+                                    <p class="staff pro"><span>8-40</span> сотрудников</p>
+                                </a>
+                            </li>
+                            
+                            <li class="tariff enterprise">
+                                <a class="kind enter" href="/solutions-enterprise">
+                                    <img src="/images/enterprise-mini.png" alt="enterprise">
+                                    <p class="staff enter"><span>50+</span> сотрудников</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+
+                    <li><a href="/tariffs" class="<%= 'selected' if @page == 'tariffs'%>">Тарифы</a></li>
+
+                    <li><a href="/how-binotel-pbx-works/one-office" class="<%= 'selected' if @page == 'how-binotel-pbx-works/one-office' || @page == 'how-binotel-pbx-works/several-offices' || @page == 'how-binotel-pbx-works/offices-in-different-cities'%>">Как работает АТС Binotel</a></li>
+                    
+                    <li><a href="/phone-numbers" class="<%= 'selected' if @page == 'phone-numbers'%>">Номера</a></li>
+
+                    <li><a href="/how-to-connect" class="<%= 'selected' if @page == 'how-to-connect'%>">Подключение</a></li>
+
+                    <li class="info-dropdown company <%= 'selected' if @page == 'about' || @page == 'contacts'%>">
+                        <a class="top-link" href="javascript:void(0);">Компания<i></i></a>
+                        <ul>
+                            <li><a href="/about">О компании</a></li>
+                            <li><a href="/contacts">Контакты</a></li>   
+                        </ul>
+                    </li>
+
+                    <li class="info-dropdown <%= 'selected' if @page == 'faq' || @page == 'info'%>">
+                        <a class="top-link" href="javascript:void(0);">Инфо-центр<i></i></a>
+                        <ul>
+                            <li><a href="/info">Блог</a></li>
+                            <li><a href="/faq/%D0%9E%D0%B1%D1%89%D0%B8%D0%B5-%D0%B2%D0%BE%D0%BF%D1%80%D0%BE%D1%81%D1%8B">Вопрос-Ответ</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+
+            </div>
+        </div>
+
+
+        <div id="content-<%= @content_div %>" class="main-content">
+                <%= yield %>
+            <div class="shadow-strip"></div>
+        </div>
+
+
+        <div class="push content-<%= @content_div %>"></div>
+    </div>
+
+    <div id="footer">
+        <div class="content">
+            <div class="slogan">
+                <h1>Binotel. <span>Связь для бизнеса.</span></h1>
+            </div>
+            <div class="links">
+                <h5>Copyright 2013 &nbsp; <a href="/">www.binotel.ua</a></h5>
+                <ul class="links">
+                    <li><a href="/contacts">Контакты</a></li>
+                    <li><a href="/tariffs">Тарифы</a></li>
+                    <li><a href="/solutions-pro">Пакетные решения</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+<script type="text/javascript">
+    $(function() {
+        $('#displayed-phone').html($('#cd-dropdown option:selected').attr('value'));
+
+        var dropdown = $('#cd-dropdown').dropdown({
+            gutter : 0,
+            stack : false,
+            onOptionSelect: function(opt) {
+                $('#displayed-phone').html($(opt).attr('data-value'));
+            }
+        });
+
+        $('#dropdown').hover(
+            function() {
+                $('#dropdown-href').addClass('active');
+            },
+            function() {
+                $('#dropdown-href').removeClass('active');
+            }
+        );
+
+        $('li.info-dropdown').hover(
+            function() {
+                $(this).addClass('active');
+            },
+            function() {
+                $(this).removeClass('active');
+            }
+        );
+
+        $('#callme').click(function() {
+            openCallmeForm();
+        });
+    });
+
+
+    $(function() {
+        var slideContent = $('#menuSlideContainer');
+        var top = slideContent.css('top'); 
+
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 200) {
+                slideContent.stop().animate({'top' : '0px'}, 200);
+            } 
+            else {
+                slideContent.stop().animate({'top' : top}, 200);
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

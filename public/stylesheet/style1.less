@@ -1,0 +1,44 @@
+@import url('../stylesheet/demo.css');
+@import url('../stylesheet/common.css');
+@import url('../stylesheet/icons.css');
+
+.cd-dropdown > span,
+.cd-dropdown ul li:nth-last-child(-n+3) span {
+	
+}
+
+.cd-dropdown ul {
+	position: absolute;
+	top: 0px;
+	width: 200px;
+}
+
+.cd-dropdown ul li {
+	position: absolute;
+	/*box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);*/
+}
+
+.cd-active.cd-dropdown > span {
+	color: #b0035f;
+	top: 0 !important;
+	width: 200px !important;
+	font: normal 14px/33px Open Sans;
+}
+
+.cd-active.cd-dropdown > span,
+.cd-active.cd-dropdown ul li span {
+	/*box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);*/
+}
+
+.cd-active.cd-dropdown ul li span {
+	-webkit-transition: all 0.1s linear 0s;
+	-moz-transition: all 0.1s linear 0s;
+	-ms-transition: all 0.1s linear 0s;
+	-o-transition: all 0.1s linear 0s;
+	transition: all 0.1s linear 0s;
+}
+
+.cd-active.cd-dropdown ul li span:hover {
+	background: #ba2564;
+	color: #fff;
+}

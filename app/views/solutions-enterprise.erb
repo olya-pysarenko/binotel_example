@@ -1,0 +1,536 @@
+<div id="solutions-page-style-template" class="content">
+
+    <div class="promo">
+        
+        <div class="left-part">
+            
+            <div class="label">
+                <p class="text enterprise"><span>50+</span> сотрудников</p>
+            </div>
+
+            <div class="main-icon">
+                <img src="/images/enterprise-details-ico.png" alt="Binotel - тариф Lite" /> 
+                
+                <div class="price">
+                    <p class="actual-price">1275</p>
+                    <p class="currency">грн/мес</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="right-part">
+            <div>
+                <p id="big">Лидерство говорит само за себя</p>
+                <p id="small">Лучшие компании доверяют Binotel</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            <span id="v"></span>
+            <ul>
+                <li class="tariff <%= 'active' if @page == 'solutions-lite' %>">
+                    <a href="/solutions-lite">Тариф <span>Lite</span></a>
+                    <div class="line lite"></div>
+                </li>
+                <li class="tariff <%= 'active' if @page == 'solutions-pro' %>">
+                    <a href="/solutions-pro">Тариф <span>Pro</span></a>
+                    <div class="line pro"></div>
+                </li>
+                <li class="tariff enterprise <%= 'active' if @page == 'solutions-enterprise' %>">
+                    <a href="/solutions-enterprise">Тариф <span>Enterprise</span></a>
+                    <div class="line enterprise"></div>
+                </li>
+            </ul>
+        </div>
+       
+        <div class="quick-view">
+            <table>
+                <tr>
+                    <td id="left">
+                        <div class="add-label enterprise">
+                            <p>Основная информация</p>
+                        </div>
+
+                        <p class="inside-text">Подключение: <span>Бесплатно</span></p>
+                        <p class="inside-text">Внутренних линий в пакете: <span>50</span></p>
+                        <p class="inside-text">Время подключения: <span>1 день</span></p>
+                        <p class="inside-text">Стоимость: <span>1700 грн/мес</span></p>
+                        <p class="inside-text">Годовая скидка: <span>-25%</span> (1275 грн/мес)</p> 
+                    </td>
+                    <td id="right">
+                        <div class="view-label">
+                            <p>Короткий обзор тарифа</p>
+                        </div>
+
+                        <p class="text">Комплексный тариф для крупных транспортных, торговых, промышленных, финансовых компаний, медицинских учреждений и госкомпаний с количеством сотрудников от 50 и более. Преимущества этого тарифа — все возможности тарифов Lite и Pro, 50 пакетных внутренних линий, личный эксперт по бизнес-телефонии, а также индивидуальный подход при подключении и обслуживании клиента.</p>
+
+                        <p class="why">Что Вы получаете?</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="features">
+
+            <div id="личный-эксперт" class="feature 1">
+                <div class="value enterprise">
+                    <div class="title">
+ 	                   	<p class="name">
+							<span class="number enterprise">1</span>
+ 	                   		Личный эксперт
+ 	                   		<span class="increase"></span>
+						</p>
+                    </div>
+
+                    <div class="available">
+                    	<span class="available">Доступно в<br>тарифах:</span>
+                    </div>
+                
+                    <div class="icons">
+                        <img src="/images/ico-enter.png" alt="Binotel - тариф Enterprise" title="Тариф Enterprise" class="enterprise" />
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="/images/feature-expert-icon.png" class="margin35" alt="Личный эксперт" />
+                </div>
+
+                <div class="description">
+                    
+                	<h2>Прямая выгода</h2>
+                    <p class="text">Возможность получить консультацию персонального эксперта в бизнес-телефонии по вопросам:</p>
+					
+					<p class="text">
+					- построения максимально удобной системы связи<br>
+					- интеграции с бизнес-процессами<br>
+					- объединения разных офисов в единую сеть<br>
+					- контроля и повышения КПД сотрудников<br>
+					- оптимизации и контроля расходов.
+					</p>
+
+                </div>
+            </div>
+
+            <div id="индивидуальные-условия" class="feature 2">
+                <div class="value enterprise">
+                    <div class="title">
+ 	                   	<p class="name">
+							<span class="number enterprise">2</span>
+ 	                   		Индивидуальные условия
+ 	                   		<span class="increase"></span>
+						</p>
+                    </div>
+
+                    <div class="available">
+                    	<span class="available">Доступно в<br>тарифах:</span>
+                    </div>
+                
+                    <div class="icons">
+                        <img src="/images/ico-enter.png" alt="Binotel - тариф Enterprise" title="Тариф Enterprise" class="enterprise" />
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="/images/feature-individual-icon.png" class="margin35" alt="Индивидуальные условия" />
+                </div>
+
+                <div class="description">
+                    <h2>Прямая выгода</h2>
+                    <p class="text">
+						Прямой номер индивидуальной техподдержки<br>
+						Выезд эксперта при подключении<br>
+						Работа программиста по интеграции с CRM клиента<br>
+						Неограниченный по глубине и нестандартный IVR<br>
+						Объединение всех офисов клиента в единую телефонную сеть с уникальной конфигурацией
+                    </p>
+                   
+                </div>
+            </div>
+
+            <div id="многоканальный-номер" class="feature 3">
+                <div class="value enterprise">
+                    <div class="title">
+ 	                   	<p class="name">
+							<span class="number enterprise">3</span>
+ 	                   		Обслуживание многоканального номера
+ 	                   		<span class="increase"></span>
+						</p>
+                    </div>
+
+                    <div class="available">
+                    	<span class="available">Доступно в<br>тарифах:</span>
+                    </div>
+                
+                    <div class="icons">
+                        <img src="/images/ico-lite.png" alt="Binotel - тариф Lite" title="Тариф Lite" class="lite" />
+                        <img src="/images/ico-pro.png" alt="Binotel - тариф Pro" title="Тариф Pro" class="pro" />
+                        <img src="/images/ico-enter.png" alt="Binotel - тариф Enterprise" title="Тариф Enterprise" class="enterprise" />
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="/images/feature-m-chanels-icon-e.png" class="margin35" alt="Обслуживание многоканального номера" />
+                </div>
+
+				<div class="description">
+                    <h2>Прямая выгода</h2>
+                    <p class="text">К вам всегда можно дозвониться. Нет пропущенных звонков.</p>
+                    <h2>Как это работает</h2>
+                    <p class="text">АТС Binotel™ обеспечивает работу внутренних телефонных линий для сотрудников и объединяет с этими линиями ваш многоканальный номер. Это позволяет разным сотрудникам одновременно принимать и совершать звонки на базе одного телефонного номера.</p>
+                </div>
+            </div>
+
+            <div id="внутренние-линии" class="feature 4">
+                <div class="value enterprise">
+                    <div class="title">
+ 	                   	<p class="name">
+							<span class="number enterprise">4</span>
+ 	                   		Внутренние линии для сотрудников и отделов
+ 	                   		<span class="increase"></span>
+						</p>
+                    </div>
+
+                    <div class="available">
+                    	<span class="available">Доступно в<br>тарифах:</span>
+                    </div>
+                
+                    <div class="icons">
+                        <img src="/images/ico-lite.png" alt="Binotel - тариф Lite" title="Тариф Lite" class="lite" />
+                        <img src="/images/ico-pro.png" alt="Binotel - тариф Pro" title="Тариф Pro" class="pro" />
+                        <img src="/images/ico-enter.png" alt="Binotel - тариф Enterprise" title="Тариф Enterprise" class="enterprise" />
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="/images/feature-lines-icon-e.png" class="margin35" alt="Внутренние линии для сотрудников и отделов" />
+                </div>
+
+                <div class="description">
+                    <h2>Прямая выгода</h2>
+                    <p class="text">Ваши сотрудники быстро переводят звонок на любого человека или отдел, могут легко передать трубку коллеге с другого филиала или города. Сотрудники компании в разных офисах или городах разговаривают между собой бесплатно. Руководство видит продуктивность конкретных сотрудников.</p>
+                    <h2>Как это работает</h2>
+                    <p class="text">Каждый человек в вашей компании имеет короткий внутренний номер, например 901. При входящем звонке на номер компании могут одновременно звонить, к примеру, телефоны у сотрудников 901-904 (отдел продаж).</p>
+                    <p class="text">Сотрудники в разных помещениях, городах, странах могут набирать друг друга по внутренним номерам. В веб-интерфейсе личного кабинета MyBinotel доступна готовая статистика об активности каждой линии (по исходящим и входящим звонкам).</p>
+                </div>
+            </div>
+
+            <div id="сценарий-звонка" class="feature 5">
+				<div class="value enterprise">
+                    <div class="title">
+ 	                   	<p class="name">
+							<span class="number enterprise">5</span>
+ 	                   		Система предотвращения непринятых звонков
+ 	                   		<span class="increase"></span>
+						</p>
+                    </div>
+
+                    <div class="available">
+                    	<span class="available">Доступно в<br>тарифах:</span>
+                    </div>
+                
+                    <div class="icons">
+                        <img src="/images/ico-lite.png" alt="Binotel - тариф Lite" title="Тариф Lite" class="lite" />
+                        <img src="/images/ico-pro.png" alt="Binotel - тариф Pro" title="Тариф Pro" class="pro" />
+                        <img src="/images/ico-enter.png" alt="Binotel - тариф Enterprise" title="Тариф Enterprise" class="enterprise" />
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="/images/feature-apportionment-icon-e.png" class="margin35" alt="Система предотвращения непринятых звонков">
+                </div>
+
+                <div class="description">
+                    <h2>Прямая выгода</h2>
+                    <p class="text">Не будет утерянных и забытых звонков, даже в нерабочее время и выходные дни.</p>
+					
+                    <h2>Как это работает</h2>
+                    <p class="text">При входящем звонке, если все линии заняты или не отвечают, АТС Binotel™  переводит звонок на запасные городские или мобильные номера ответственных сотрудников. В случае, если звонок не будет принят, вместо коротких гудков клиент услышит голосовое сообщение с полезной информацией.</p>
+                </div>
+            </div>
+
+			<div id="мини-CRM-система" class="feature 6">
+                <div class="value enterprise">
+                    <div class="title">
+ 	                   	<p class="name">
+							<span class="number enterprise">6</span>
+ 	                   		Система “Мои клиенты” (мини-CRM)
+ 	                   		<span class="increase"></span>
+						</p>
+                    </div>
+
+                    <div class="available">
+                    	<span class="available">Доступно в<br>тарифах:</span>
+                    </div>
+                
+                    <div class="icons">
+                        <img src="/images/ico-pro.png" alt="Binotel - тариф Pro" title="Тариф Pro" class="pro" />
+                        <img src="/images/ico-enter.png" alt="Binotel - тариф Enterprise" title="Тариф Enterprise" class="enterprise" />
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="/images/feature-clients-icon-e.png" class="margin35" alt="Система “Мои клиенты” (мини-CRM)" />
+                </div>
+
+                <div class="description">
+                    <h2>Прямая выгода</h2>
+                    <p class="text">Информация о клиенте при входящем звонке. Оперативное обслуживание клиентов. История звонков каждого клиента. Статистика активности клиентов.</p>
+                    <h2>Как это работает</h2>
+                    <p class="text">Во время звонка сотрудник создает профиль нового клиента в личном кабинете MyBinotel, может добавить комментарий к нему и присвоить метку, например: постоянный, vip, оптовый и т.п. Уже при звонке клиента ваши сотрудники увидят историю его обращений и комментарии к предыдущим разговорам и смогут обновить карточку клиента.</p>
+                </div>
+            </div>
+
+            <div id="голосовые-сообщения" class="feature 7">
+                <div class="value enterprise">
+                    <div class="title">
+ 	                   	<p class="name">
+							<span class="number enterprise">7</span>
+ 	                   		Голосовая информация 24/7
+ 	                   		<span class="increase"></span>
+						</p>
+                    </div>
+
+                    <div class="available">
+                    	<span class="available">Доступно в<br>тарифах:</span>
+                    </div>
+                
+                    <div class="icons">
+                        <img src="/images/ico-lite.png" alt="Binotel - тариф Lite" title="Тариф Lite" class="lite" />
+                        <img src="/images/ico-pro.png" alt="Binotel - тариф Pro" title="Тариф Pro" class="pro" />
+                        <img src="/images/ico-enter.png" alt="Binotel - тариф Enterprise" title="Тариф Enterprise" class="enterprise" />
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="/images/feature-24-icon.png" alt="Голосовая информация 24/7" />
+                </div>
+
+                <div class="description">
+                    <h2>Прямая выгода</h2>
+                    <p class="text">Удержание клиентов, позвонивших в нерабочее время. Формирование и поддержка лояльности клиентов.</p>
+                    <h2>Как это работает</h2>
+                    <p class="text">Клиент, позвонивший в вашу компанию в нерабочее время или выходной день, услышит вместо длинных гудков голосовую информацию, например: “Здравствуйте, Вы позвонили в компанию “х”. Ваш звонок очень важен для нас. Сегодня — выходной день, поэтому мы не можем Вам ответить. Оставьте свое сообщение после звукового сигнала, и мы Вам перезвоним”.</p>
+                    <p class="text">Текст голосового сообщения может быть по вашему желанию, как шаблонный, так и уникальный. Binotel обеспечит запись в профессиональной студии.</p>
+                </div>
+            </div>
+
+            <div id="запись-разговоров" class="feature 8">
+                <div class="value enterprise">
+                    <div class="title">
+ 	                   	<p class="name">
+							<span class="number enterprise">8</span>
+ 	                   		Постоянная запись разговоров
+ 	                   		<span class="increase"></span>
+						</p>
+                    </div>
+
+                    <div class="available">
+                    	<span class="available">Доступно в<br>тарифах:</span>
+                    </div>
+                
+                    <div class="icons">
+                        <img src="/images/ico-lite.png" alt="Binotel - тариф Lite" title="Тариф Lite" class="lite" />
+                        <img src="/images/ico-pro.png" alt="Binotel - тариф Pro" title="Тариф Pro" class="pro" />
+                        <img src="/images/ico-enter.png" alt="Binotel - тариф Enterprise" title="Тариф Enterprise" class="enterprise" />
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="/images/feature-record-icon-e.png" alt="Постоянная запись разговоров" />
+                </div>
+
+                <div class="description">
+                    <h2>Прямая выгода</h2>
+                    <p class="text">Записываются все разговоры сотрудников. Помогает вспомнить детали любого разговора. Сотрудники работают более эффективно. Руководители видят объективную картину рабочего процесса. Решать спорные вопросы можно значительно проще и быстрее.</p>
+                    <h2>Как это работает</h2>
+                    <p class="text">АТС Binotel™ автоматически фиксирует все телефонные разговоры ваших сотрудников с клиентами. Найти и прослушать необходимую запись в личном кабинете MyBinotel  может любой человек с правом доступа к аудиозаписям.</p>
+
+					<!--<div class="interface-button">
+                        <a href="#">
+                            <p class="button">Посмотреть интерфейс</p>
+                            <img src="images/next.png" />
+                        </a>
+                    </div> -->
+                </div>
+                
+            </div>
+
+            <div id="готовая-статистика" class="feature 9">
+                <div class="value enterprise">
+                    <div class="title">
+ 	                   	<p class="name">
+							<span class="number enterprise">9</span>
+ 	                   		Готовая статистика
+ 	                   		<span class="increase"></span>
+						</p>
+                    </div>
+
+                    <div class="available">
+                    	<span class="available">Доступно в<br>тарифах:</span>
+                    </div>
+                
+                    <div class="icons">
+                        <img src="/images/ico-lite.png" alt="Binotel - тариф Lite" title="Тариф Lite" class="lite" />
+                        <img src="/images/ico-pro.png" alt="Binotel - тариф Pro" title="Тариф Pro" class="pro" />
+                        <img src="/images/ico-enter.png" alt="Binotel - тариф Enterprise" title="Тариф Enterprise" class="enterprise" />
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="/images/feature-statistics-icon-e.png" alt="Готовая статистика" />
+                </div>
+
+                <div class="description">
+                    <h2>Прямая выгода</h2>
+                     <p class="text">Вы узнаете, сколько звонков делает отдел продаж или определенный сотрудник в конкретный период, среднюю длительность разговоров, количество принятых/непринятых звонков, сколько времени в день тратит определенный сотрудник на разговоры, на какие номера звонит и т.п.</p>
+                    
+                    <p class="text">Вы будете видеть статистику расходов на исходящую связь по сотрудникам/отделам.</p> 
+                    
+                    <p class="text">Вы сможете проверять эффективность своих рекламных кампаний.</p>
+
+                    <h2>Как это работает</h2>
+                    <p class="text">Виртуальная АТС Binotel™ автоматически формирует готовую статистику в виде простых таблиц и графиков. Посмотреть готовую статистику можно в личном кабинете MyBinotel.</p>
+
+					<!--<div class="interface-button">
+                        <a href="#">
+                            <p class="button">Посмотреть интерфейс</p>
+                            <img src="images/next.png" />
+                        </a>
+                    </div> -->
+                </div>
+
+            </div>
+
+			<div id="смс-рассылки-альфа-номер" class="feature 10">
+                <div class="value enterprise">
+                    <div class="title">
+ 	                   	<p class="name">
+							<span class="number enterprise">10</span>
+ 	                   		SMS + бесплатный альфа-номер
+ 	                   		<span class="increase"></span>
+						</p>
+                    </div>
+
+                    <div class="available">
+                    	<span class="available">Доступно в<br>тарифах:</span>
+                    </div>
+                
+                    <div class="icons">
+                        <img src="/images/ico-enter.png" alt="Binotel - тариф Enterprise" title="Тариф Enterprise" class="enterprise" />
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="/images/feature-sms-icon-ent.png" alt="Отправление SMS + бесплатный альфа номер" />
+                </div>
+
+                <div class="description">
+                    <h2>Прямая выгода</h2>
+                    <p class="text">Быстрый и удобный способ делать персональную/массовую отправку SMS-сообщений с информацией для клиентов и видеть данные о доставке сообщений абонентам.<br>
+                    Бесплатный альфа-номер — возможность рассылать SMS-сообщения от имени компании клиента.</p>
+
+                    <h2>Как это работает</h2>
+                    <p class="text">Ваш сотрудник может отправлять SMS клиентам непосредственно из личного кабинета MyBinotel. В два клика можно отправить сообщение как с шаблонным, так и с уникальным текстом.</p>
+                </div>
+            </div>
+
+			<div id="снижение-расходов" class="feature 11">
+                <div class="value enterprise">
+                    <div class="title">
+ 	                   	<p class="name">
+							<span class="number enterprise">11</span>
+ 	                   		Снижение расходов
+ 	                   		<span class="increase"></span>
+						</p>
+                    </div>
+
+                    <div class="available">
+                    	<span class="available">Доступно в<br>тарифах:</span>
+                    </div>
+                
+                    <div class="icons">
+                        <img src="/images/ico-lite.png" alt="Binotel - тариф Lite" title="Тариф Lite" class="lite" />
+                        <img src="/images/ico-pro.png" alt="Binotel - тариф Pro" title="Тариф Pro" class="pro" />
+                        <img src="/images/ico-enter.png" alt="Binotel - тариф Enterprise" title="Тариф Enterprise" class="enterprise" />
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="/images/feature-lower-costs-icon-ent.png" alt="Снижение расходов" />
+                </div>
+
+                <div class="description">
+                    <h2>Прямая выгода</h2>
+                    <p class="text">Бесплатная связь внутри офиса и с филиалами, в т.ч. в других городах и странах. Существенное снижение расходов на связь, в зависимости от специфики бизнеса — до 70%.</p>
+                    <h2>Как это работает</h2>
+                    <p class="text">АТС Binotel™ работает через Интернет, поэтому внутренняя связь для всех сотрудников является бесплатной, независимо от места нахождения. Система сама понимает направление звонка и автоматически подбирает тот ваш телефонный номер — городской, мобильный, города другой страны, с которого наиболее выгодно совершать звонок.</p>
+                    <p class="text">Эксперты Binotel также порекомендуют для вашей компании финансово выгодную конфигурацию по переводам и переадресациям звонков.</p>
+                </div>
+            </div>
+
+			<div id="интеграция-с-CRM" class="feature 12">
+                <div class="value enterprise">
+                    <div class="title">
+ 	                   	<p class="name">
+							<span class="number enterprise">12</span>
+ 	                   		Интеграция с CRM
+ 	                   		<span class="increase"></span>
+						</p>
+                    </div>
+
+                    <div class="available">
+                    	<span class="available">Доступно в<br>тарифах:</span>
+                    </div>
+                
+                    <div class="icons">
+                        <img src="/images/ico-pro.png" alt="Binotel - тариф Pro" title="Тариф Pro" class="pro" />
+                        <img src="/images/ico-enter.png" alt="Binotel - тариф Enterprise" title="Тариф Enterprise" class="enterprise" />
+                    </div>
+                </div>
+
+                <div class="pic">
+                    <img src="/images/feature-CRM-icon.png" alt="Интеграция с CRM" />
+                </div>
+
+                <div class="description">
+                    <h2>Прямая выгода</h2>
+                    <p class="text">Совершение звонков прямо с интерфейса вашей CRM-системы. При входящем звонке открытие карточки клиента с полем для ввода информации. Удобное заполнение информации о клиенте во время звонка. Сохранение всей истории звонков клиента в вашей CRM-системе.</p>
+
+                    <h2>Как это работает</h2>
+                    <p class="text">АТС Binotel™ интегрируется с вашей CRM-системой, после чего на мониторах сотрудников появится иконка в виде телефона. С помощью функции “Один клик” сотрудник сможет звонить как из ленты звонков, так и с карточки клиента.</p>
+                    <p class="text">Все входящие и исходящие звонки автоматически заносятся в CRM и прикрепляются к карточкам клиентов. При необходимости можно посмотреть, когда звонил тот или иной клиент, кто с ним разговаривал, а также прослушать запись конкретного разговора.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="wheretogo">
+            <ul>
+                <li class="togo left enterprise">
+                    <a href="/why-binotel"><p>Почему Binotel ?</p></a>      
+                </li>
+                
+                <li class="togo center enterprise">
+                    <a href="/how-to-connect"><p>Как подключиться</p></a>
+                </li>
+                
+                <li class="togo right enterprise">
+                    <a href="/tariffs"><p>Смотреть тарифы</p></a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+<script>
+    $(function() {                
+        $('.tariff').click(function () {
+            $('.tariff').removeClass('active');
+            $(this).addClass('active');
+        });
+    });
+</script>
+
+</div>
+

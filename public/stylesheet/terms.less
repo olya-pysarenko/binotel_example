@@ -1,0 +1,39 @@
+.cf() {
+        content: "\0020";
+        display: table;
+        height: 0;
+        overflow: hidden;
+}
+
+.clearfix() {
+        &:before { .cf(); }
+        &:after { .cf(); clear: both; }
+        zoom: 1;
+}
+
+
+#content-terms {
+    padding: 15px 0 50px;
+    background: #eeeeee url("/images/1x4.png") repeat-x;
+    
+    div.content {
+        width: 1010px;
+        margin: 0 auto;
+        min-height: 745px;
+        padding-bottom: 30px;
+
+        p {
+            text-align: left;
+        }
+
+        h2 {
+            margin: 15px 0 10px 0;
+            text-shadow: 0 1px 0 #fff;
+        }
+
+        h4 {
+            margin: 15px 0 10px 0;
+            text-shadow: 0 1px 0 #fff;
+        }
+    }
+}

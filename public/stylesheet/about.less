@@ -1,0 +1,120 @@
+.cf() {
+    content: "\0020";
+    display: table;
+    height: 0;
+    overflow: hidden;
+}
+
+.clearfix() {
+    &:before { .cf(); }
+    &:after { .cf(); clear: both; }
+    zoom: 1;
+}
+
+#content-about {
+	padding: 0 0 52px;
+    background: #eee;
+
+	.title {
+        width: 100%;
+        height: 324px;
+        background-color: #dddddf;
+        background: url("/images/1x4.png") repeat-x, #dddddf url("/images/quote-bg.png") no-repeat center 0;
+        
+        .center-title {
+            width: 1020px;
+            margin: 0 auto;
+            height: 100%;
+
+            .text {
+                width: 910px;
+                margin: 0 auto;
+
+                p {
+                    font: 300 33px/32px Open Sans, Arial; 
+                    color: #000000;
+                    padding-left: 90px;
+                    padding-top: 110px;
+
+                    position: relative;
+                    
+                    #quote { 
+                        background: url("/images/quote-icon.png") no-repeat scroll 0 0 transparent;
+                        display: block;
+                        height: 20px;
+                        margin: 5px 0 0 -40px;
+                        position: absolute;
+                        width: 26px;
+                    }
+
+                    span { font: 300 21px/24px Open Sans, Arial, Sans-serif; }
+                }
+            }
+        }
+    }
+    
+    div.wrapper {
+        width: 1020px;
+        padding: 20px 0 0;
+        margin: 0 auto;
+
+        div.block {
+            .clearfix;
+
+            &.first > div.bg { background-color: #de337a; }
+
+            &.second > div.bg {
+                background-color: #ca006c;
+            }
+
+            &.third > div.bg {
+                background-color: #b0035f;
+            }
+
+            &.fourth > div.bg {
+                background-color: #9a055e;
+            }
+
+            &.fifth > div.bg {
+                background-color: #8a004d;
+            } 
+
+    		div.bg {
+                float: left;
+
+    			width: 287px;
+    			height: 126px;
+
+                h3 {
+                    text-align: right;
+                    padding: 18px 26px 0 0;
+
+                    font: 300 26px/26px Open sans, Ubuntu, Arial;
+                    color: #fff;
+                }
+    		}
+
+            div.text {
+                margin: 15px 0 0 315px;
+
+                p {
+                    font: 300 15px/20px Open sans, Ubuntu, Arial;
+                }
+            }
+        }
+    }
+}
+
+#wheretogo {
+
+    ul {
+
+        li.togo {
+
+            &.left { 
+                background: url("/images/learn-more-icon.png") 24px 50% no-repeat, #ca006c;
+                &:hover { background-color: #d10572; }
+            }
+        }
+    }
+}

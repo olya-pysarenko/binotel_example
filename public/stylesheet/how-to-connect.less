@@ -1,0 +1,100 @@
+.cf() {
+    content: "\0020";
+    display: table;
+    height: 0;
+    overflow: hidden;
+}
+
+.clearfix() {
+    &:before { .cf(); }
+    &:after { .cf(); clear: both; }
+    zoom: 1;
+}
+
+
+#content-how-to-connect {
+    div#title {
+        height: 324px;
+        display: table;
+        width: 100%;
+        background-color: #dddddf;
+        background: url("/images/1x4.png") repeat-x, #dddddf url("/images/quote-bg.png") no-repeat center 0;
+
+        div#center-title {
+            display: table-cell;
+            text-align: left;
+
+            div#text {
+                width: 610px;
+                margin: 115px auto;
+
+                #quote {
+                    background: url("/images/quote-icon.png") no-repeat;
+                    display: block;
+                    width: 26px;
+                    height: 20px;
+                    margin: 6px 0 0 -41px;
+                    position: absolute;
+                }
+
+                p:first-child {
+                    font: 300 1.375em/1.59 Open Sans, Arial, sans-serif;
+                    color: #000000;
+                    margin: 0;
+
+                    span {
+                        font: 300 163%/92% Open Sans, Arial, sans-serif;
+                    }
+                }
+            }
+        }
+    }
+
+    div#steps {
+        width: 1020px;
+        height: 100%;
+        margin: 30px auto 80px;
+
+        div.step {
+            height: 105px;
+            margin: 0 0 23px 107px;
+
+            div.block {
+                width: 116px;
+                height: 100%;
+                float: left;
+                margin-right: 26px;
+                
+                &.phone { background: url("/images/block-phone.png") no-repeat; }
+                &.tariff { background: url("/images/block-tariff.png") no-repeat; }
+                &.sign { background: url("/images/block-sign.png") no-repeat; }
+                &.ready { background: url("/images/block-ready.png") no-repeat; }
+            }
+
+            p {
+                margin: 0 0 4px;
+
+                &.first {
+                    color: #9f9fa2;
+                    font: 300 1.25em/1.1 Open Sans, Arial, sans-serif;
+                    padding-top: 17px;
+                }
+
+                &.second {
+                    color: #000000;
+                    font: 400 1.5em/1.08 Open Sans, Arial, sans-serif;
+                }
+
+                &#ready {
+                    font: 300 1.06em/1.29 Open Sans, Arial, sans-serif;
+                    color: #000000;
+                    padding-top: 17px;
+                }
+
+                a {
+                    color: #878787;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,429 @@
+.cf() {
+    content: "\0020";
+    display: table;
+    height: 0;
+    overflow: hidden;
+}
+
+.clearfix() {
+    &:before { .cf(); }
+    &:after { .cf(); clear: both; }
+    zoom: 1;
+}
+
+#content-index {
+    background: #fff url("/images/main-bg-blue3.jpg") repeat-x;
+    background-position: top center;
+    
+    div.content {
+        width: 1020px;
+        padding-bottom: 4px;
+        margin: 0 auto;
+        
+        div.upper {
+            height: 290px;
+            padding-top: 24px;
+            position: relative;
+            
+            div.column {
+                
+                p.text {
+                    margin: 0;
+                    color: #fff;
+                    
+                    &.right { font:300 13px/25px Open Sans, Tahoma, Arial; }
+
+                    &.left { font:300 15px/22px Open Sans, Tahoma, Arial; }
+                }
+
+                a:hover { text-decoration: none; }
+            }
+
+            div.left {
+                .clearfix;
+
+                width: 508px;
+                height: 300px;
+                position: absolute;
+                top: 0;
+                left: 0;
+
+                #l1, #l2 {
+                    width: 197px;
+                    float: left;
+                    margin: 97px 42px 30px 13px;
+
+                    .number {
+                        font: 600 39px/41px Open Sans, Tahoma, Arial;
+                        color: #fff;
+                        text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+                        margin: 0 0 8px;        
+                    }
+
+                    .description {
+                        font: 400 15px/17px Open Sans, Tahoma, Arial;
+                        color: #fff;
+                        text-shadow: 0 1px 0 rgba(0,0,0,0.1);
+                    }
+                }
+            }
+
+            .left:before {
+                content: '';
+                display: inline-block;
+                height: 100%; 
+                vertical-align: middle;
+            }
+                        
+            div.right {
+                top: 23px;
+                right: 1px;
+                position: absolute;
+                float: left;
+                width: 511px;
+                height: 242px;
+
+                -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.21);
+                -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.21);
+                box-shadow: 0 1px 5px rgba(0, 0, 0, 0.21);
+
+                background: url("/images/main-red-bg.jpg") no-repeat;
+                
+                a {
+                    text-decoration: none;
+                    padding: 18px 0 0 39px;
+                    display: block;
+                    
+                    &:hover { text-decoration: none; }
+                }
+
+                h3 {
+                    font:300 22px/24px Open Sans, Tahoma, Arial;
+                    color: #fff;
+                    margin: 7px 0 4px;
+                    float: left;
+                    width: 400px;
+                }
+
+                img { border: none !important;}
+                
+                .know {
+                    float: right;
+                    position: absolute;
+                    margin: 4px 18px 0 0;
+                    right: 0;
+                }
+
+                .more {
+                    margin: 0;
+                    font: 300 11px/22px Open Sans, Tahoma, Arial;
+                    color: #e5a0bf;
+                    display: inline-block;
+                }
+
+                #separator {
+                    width: 474px;
+                    height: 2px;
+                    display: inline-block;
+                    margin: 0 0 -6px 18px;
+                    background-color: transparent;
+                    background: url("/images/separator.png") repeat-x;
+                }
+            }
+        }
+       
+        div#about {
+            margin: 0 0 33px;
+            width: 100%;
+
+            h1 {
+                font: 300 2.062em/160% Open Sans, Tahoma, Arial;
+                color: #a4a4aa;
+                margin-top: 20px;
+
+                span { font: 300 66%/68% Open Sans, Tahoma, Arial; }
+
+                strong { font: 600 100%/100% Open Sans, Tahoma, Arial; }
+            }
+
+            h3 {
+                font: 300 17px/20px Open Sans, Tahoma, Arial;
+                color: #a4a4aa;
+            }
+        }
+        
+        div.lower-tariffs {
+            height: 400px;
+            margin: 18px 0 12px;
+            position: relative;
+            
+            div.block {
+                .clearfix;
+                float: left;
+                position: relative; 
+
+                a.icon {
+                    height: 209px;
+                    display: block;
+                    margin-top: -33px;
+                    padding-top: 33px;
+
+                    -webkit-transition: all 0.2s ease;
+                    -moz-transition: all 0.2s ease;
+                    -ms-transition: all 0.2s ease;
+                    -o-transition: all 0.2s ease;
+                    transition: all 0.2s ease;
+                    
+                    &:hover { background-color: #f3f3f3; }
+                }
+
+                &.lite {
+                    width: 322px;
+                    margin-top: 5px;
+
+                    li { background: url("/images/list-ico-lite.png") no-repeat center left; }
+                }
+
+                &.pro {
+                    width: 305px;
+                    margin: 5px 0 0 45px;
+                    
+                    li { background: url("/images/list-ico-pro.png") no-repeat center left; }
+                }
+
+                &.enterprise {
+                    width: 300px;
+                    margin: 5px 0 0 36px;
+
+                    li {
+                        background: url("/images/list-ico-enterprise.png") no-repeat top left;
+                        background-position: 0px 7px;
+                    }
+                }
+            
+                div.label {
+                    height: 33px;
+                    border-radius: 0px !important; 
+                    background-color: transparent;
+                    padding: 0;
+
+                    p {
+                        font: 300 13px/33px Open Sans, Tahoma, Arial;
+                        color: #fff;
+                        display: inline-block;
+                        padding: 1px 26px 0 22px;
+
+                        span { font: 400 18px/18px Open Sans, Tahoma, Arial; }
+                    }
+
+                    &.lite, &.pro, &.enterprise { margin: 0; }
+
+                    &.lite p { background-color: #c5276c; }
+
+                    &.pro p { background-color: #9a0752; }
+
+                    &.enterprise p { background-color: #e78c09; }
+                }
+
+                img { 
+                    margin-top: 15px; 
+                    border: none !important;
+                }
+
+                div.tariff-price {
+                    position: absolute;
+                    width: 120px;
+                    height: 80px;
+                    margin: 0;
+
+                    &.lite {
+                        top: 65px;
+                        right: 0px;
+                    }
+
+                    &.pro {
+                        top: 58px;
+                        right: -15px;   
+                    }
+
+                    &.enterprise {
+                        top: 64px;
+                        right: -30px;
+                    }
+
+                    p {
+                        margin: 0;
+                        display: block;
+                        color: #969699;
+                        
+                        &.old-price {
+                            font: normal 14px/18px Open Sans, Tahoma, Arial;
+                            text-decoration: line-through;
+                        }
+
+                        &.actual-price { font: normal 30px/30px Open Sans, Tahoma, Arial; }
+                            
+                        &.currency { font: normal 13px/15px Open Sans, Tahoma, Arial; }
+                    }
+                }
+
+                div.description {
+                    padding-top: 6px;
+
+                    ul {
+                        margin: 0;
+                        list-style-type: none;
+
+                        li { padding-left: 13px; }
+
+                        li, li > a {
+                            font: 300 13px/21px Open Sans, Tahoma, Arial;
+                            color: #000;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }   
+        }
+    }
+
+
+    div#clients {
+        width: 100%;
+        padding: 24px 0 5px;
+        background: url("/images/1x4.png") repeat-x top center, url("/images/lower.png") repeat-x bottom center;
+        background-color: #f0f0f0; 
+        position: relative;
+
+        #inner {
+            width: 1020px;
+            margin: 0 auto;
+
+            #clients-list {
+                width: 375px;
+                height: 66px;
+                display: block;
+                background: #b0035f;
+                font: 300 20px/26px Open Sans, Tahoma, Arial;
+                color: #ffffff;
+                padding: 18px 76px;
+            }
+
+            table {
+                width: 1020px;
+                margin: 0 auto;
+                table-layout: fixed;
+                border-spacing: 0;
+                margin-top: 19px;
+
+                tr {
+                    display: inline-table;
+                    margin-bottom: 30px;
+
+                    img { border: none !important;}
+                }
+            }
+        }
+    }
+
+    div#income {
+        overflow: hidden;
+        text-align: center;
+        width: 1020px;
+        padding: 0 0 50px 0;
+        margin: 0 auto;
+
+        #head {
+            display: inline-block;
+            height: 143px;
+            width: 100%;
+            margin: 34px 0 -36px;
+
+            #title {
+                font: 600 2.062em/2.25em Open Sans, Tahoma, Arial;
+                color: #000000;
+                display: inline;
+            }
+        }
+
+        div {
+            width: 340px;
+            float: left;
+
+            .section {
+                height: 104px;
+                display: inline-block;
+                text-align: left;
+
+                &.one { background: #940152; }
+                &.two { background: #b0035f; }
+                &.three { background: #ca006c; }
+
+                .number {
+                    margin: 29px 0 0 21px;
+                    font:300 4.375em Open Sans, Tahoma, Arial;
+                    color: #ffffff;
+                    float: left;
+                    display: inline;
+                }
+
+                .efficiency {
+                    font: 300 1.3em/1.5em Open Sans, Tahoma, Arial;
+                    color: #fff;
+                    text-align: left;
+                    display: inline-block;
+                    margin: 0 0 9px 14px;
+
+                    span {
+                        color: #E787B9;
+                        display: block;
+                        margin: 26px 0px -11px;
+                    }            
+                }
+
+                &.one {
+                    .efficiency {
+                        margin: 0 0 9px 0;
+                    }
+                }
+            }
+
+            .income-pic {
+                display: inline-block;
+                padding: 30px 0px;
+            }
+
+            .profit {
+                margin: 0;
+                list-style-type: none;
+
+                li {
+                    padding: 6px 0 6px 13px;
+                    text-align: left;
+
+                    &.employee { background: url("/images/profit-1-pic.png") no-repeat center left; background-position: 0 13px; }
+                    &.client { background: url("/images/profit-2-pic.png") no-repeat center left; background-position: 0 13px; }
+                    &.info { background: url("/images/profit-3-pic.png") no-repeat center left; background-position: 0 13px; } /*change pic to correct value!*/      
+                }
+
+                li, li > a {
+                    font: 300 15px/20px Open Sans, Tahoma, Arial;
+                    color: #000;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+
+    .reveal-email { 
+        position: fixed; 
+        height: 100%;
+        width: 100%;
+        background: #000;
+        background: rgba(0,0,0,.4);
+        z-index: 100;
+        display: none;
+        bottom: 0;
+        left: 0; 
+    }
+}

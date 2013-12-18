@@ -1,0 +1,132 @@
+#content-functions_description {
+    .reveal-description {
+        /*visibility: hidden;*/
+        width: 555px;
+        height: 372px;
+        background: #fff;
+        position: absolute !important;
+        top: 100px; 
+        left: 50%;
+        margin-left: -275px;
+        z-index: 101;
+
+        -moz-box-shadow: 0 0 10px #777777;
+        -webkit-box-shadow: 0 0 10px #777777;
+        box-shadow: 0 0 10px #777777;
+
+        .head-part {
+            width: 20%;
+            height: 29px;
+            z-index: 102;
+            float: left;
+
+            &.first { background: #cf197a; }
+            &.second { background: #b81c6f; }
+            &.third { background: #a41e6e; }
+            &.fourth { background: #95195e; }
+            &.fifth { background: #822254; }
+        }
+
+
+        p {
+            display: block;
+            width: 400px;
+            font: 300 18px/23px Open Sans, Tahoma, Arial;
+            color: #8f8f92;
+            text-align: center;
+            margin: 55px auto 26px;
+        }
+
+        .button {
+            height: 40px;
+            color: #fff;
+            border-radius: 0px;
+            border: none;
+            float: left;
+            margin-top: 24px;
+
+            -webkit-box-shadow: 0 1px 2px #ddd;
+            -moz-box-shadow: 0 1px 2px #ddd;
+            box-shadow: 0 1px 2px #ddd;
+
+            &.yes {
+                width: 230px;
+                background: #b81c6f;
+            }
+
+            &.cancel, &.close-modal {
+                width: 170px;
+                background: #aaa;
+                margin-left: 15px;
+            }
+        }
+
+        div.call-me-form {
+            width: 420px;
+            margin: 0 auto;
+            
+            input[type=text] {
+                padding-left: 15px;
+                background: #ededee;
+                margin: 0 auto;
+                width: 250px;
+                height: 50px;
+                display: block;
+                border: none;
+                color: #000;
+                font: 400 18px/50px Open Sans, Tahoma, Arial;
+
+                -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+                -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+                box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+
+                -webkit-border-radius: 0px;
+                -moz-border-radius: 0px;
+                border-radius: 0px;
+
+                &::-webkit-input-placeholder { color: #b3b3b7; }
+                &:-moz-placeholder { color: #b3b3b7; }
+                &::-moz-placeholder { color: #b3b3b7; }
+                &:-ms-input-placeholder { color: #b3b3b7; }
+
+                &.error {
+                    &::-webkit-input-placeholder { color: #b94a48; }
+                    &:-moz-placeholder { color: #b94a48; }
+                    &::-moz-placeholder { color: #b94a48; }
+                    &:-ms-input-placeholder { color: #b94a48; }
+                }
+            }
+
+            /*input:not([type=submit]):not([type=file]) {
+               #omg so much cleaner 
+            }*/
+        }
+
+        div.send-success {
+            width: 420px;
+            height: 400px;
+            margin: 0 auto;
+            display: none;
+
+            p {
+                margin: 165px auto 50px;
+            }
+
+            .button.close-modal {
+                margin-left: 124px;
+            }
+        }
+    }
+
+    .reveal-modal-bg { 
+        position: fixed; 
+        height: 100%;
+        width: 100%;
+        background: #000;
+        background: rgba(0,0,0,.4);
+        z-index: 100;
+        display: none;
+        top: 0;
+        left: 0; 
+    }
+}
